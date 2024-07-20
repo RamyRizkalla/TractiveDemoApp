@@ -1,0 +1,13 @@
+/*
+  Localizable.strings
+  Tractive Demo App
+
+  Created by Ramy Rizkalla on 19/07/2024.
+  
+*/
+
+"pet_chooser.title" = "Get a sneak peek";
+
+"pet_chooser.subtitle.expectation" = "We'd love to show you what to expect once you get one.";
+
+"pet_chooser.subtitle.question" = "But first, tell us - are you a cat or dog parent?";

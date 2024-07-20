@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D186CA72C49B7B20027281F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CA62C49B7B20027281F /* AppDelegate.swift */; };
+		2D186CA92C49B7B20027281F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CA82C49B7B20027281F /* SceneDelegate.swift */; };
+		2D186CAB2C49B7B20027281F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CAA2C49B7B20027281F /* ViewController.swift */; };
+		2D186CAE2C49B7B20027281F /* PetChooser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CAC2C49B7B20027281F /* PetChooser.storyboard */; };
+		2D186CB12C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CAF2C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld */; };
+		2D186CB32C49B7B40027281F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CB22C49B7B40027281F /* Images.xcassets */; };
+		2D186CB62C49B7B40027281F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CB42C49B7B40027281F /* LaunchScreen.storyboard */; };
+		2D186CC12C49B7B40027281F /* Tractive_Demo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CC02C49B7B40027281F /* Tractive_Demo_AppTests.swift */; };
+		2D186CCB2C49B7B40027281F /* Tractive_Demo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CCA2C49B7B40027281F /* Tractive_Demo_AppUITests.swift */; };
+		2D186CCD2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CCC2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift */; };
+		2D186CDB2C4A86620027281F /* PetChooserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CDA2C4A86620027281F /* PetChooserViewModel.swift */; };
+		2D186CDD2C4A867C0027281F /* PetChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CDC2C4A867C0027281F /* PetChooserViewController.swift */; };
+		2D186CE52C4A88F50027281F /* PetVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CE42C4A88F50027281F /* PetVideo.mp4 */; };
+		2D186CEC2C4A9E890027281F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CEE2C4A9E890027281F /* Localizable.strings */; };
+		2D186CF42C4AA0870027281F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CF32C4AA0870027281F /* Strings.swift */; };
+		2D186CF62C4AA1270027281F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CF52C4AA1270027281F /* Colors.xcassets */; };
+		2D186CFF2C4ADC440027281F /* UILoopedVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CFE2C4ADC440027281F /* UILoopedVideoPlayer.swift */; };
+		2D186D012C4ADC510027281F /* UILoopedVideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D186D002C4ADC510027281F /* UILoopedVideoPlayer.xib */; };
+		2D186D032C4BCC470027281F /* CatChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D022C4BCC470027281F /* CatChoiceViewController.swift */; };
+		2D186D052C4BCC5C0027281F /* DogChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D042C4BCC5C0027281F /* DogChoiceViewController.swift */; };
+		2D186D2E2C4BCF8E0027281F /* Design in Frameworks */ = {isa = PBXBuildFile; productRef = 2D186D2D2C4BCF8E0027281F /* Design */; };
+		2D186D302C4BCF8E0027281F /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 2D186D2F2C4BCF8E0027281F /* Utilities */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D186CBD2C49B7B40027281F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D186C9B2C49B7B20027281F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D186CA22C49B7B20027281F;
+			remoteInfo = "Tractive Demo App";
+		};
+		2D186CC72C49B7B40027281F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D186C9B2C49B7B20027281F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D186CA22C49B7B20027281F;
+			remoteInfo = "Tractive Demo App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D186CA32C49B7B20027281F /* Tractive Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tractive Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D186CA62C49B7B20027281F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D186CA82C49B7B20027281F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D186CAA2C49B7B20027281F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D186CAD2C49B7B20027281F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PetChooser.storyboard; sourceTree = "<group>"; };
+		2D186CB02C49B7B20027281F /* Tractive_Demo_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tractive_Demo_App.xcdatamodel; sourceTree = "<group>"; };
+		2D186CB22C49B7B40027281F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2D186CB52C49B7B40027281F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D186CB72C49B7B40027281F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D186CBC2C49B7B40027281F /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D186CC02C49B7B40027281F /* Tractive_Demo_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tractive_Demo_AppTests.swift; sourceTree = "<group>"; };
+		2D186CC62C49B7B40027281F /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D186CCA2C49B7B40027281F /* Tractive_Demo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tractive_Demo_AppUITests.swift; sourceTree = "<group>"; };
+		2D186CCC2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tractive_Demo_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D186CDA2C4A86620027281F /* PetChooserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetChooserViewModel.swift; sourceTree = "<group>"; };
+		2D186CDC2C4A867C0027281F /* PetChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetChooserViewController.swift; sourceTree = "<group>"; };
+		2D186CE42C4A88F50027281F /* PetVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PetVideo.mp4; sourceTree = "<group>"; };
+		2D186CED2C4A9E890027281F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2D186CF02C4A9FE50027281F /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		2D186CF32C4AA0870027281F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2D186CF52C4AA1270027281F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2D186CFE2C4ADC440027281F /* UILoopedVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILoopedVideoPlayer.swift; sourceTree = "<group>"; };
+		2D186D002C4ADC510027281F /* UILoopedVideoPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UILoopedVideoPlayer.xib; sourceTree = "<group>"; };
+		2D186D022C4BCC470027281F /* CatChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatChoiceViewController.swift; sourceTree = "<group>"; };
+		2D186D042C4BCC5C0027281F /* DogChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogChoiceViewController.swift; sourceTree = "<group>"; };
+		2D186D2A2C4BCEF60027281F /* Design */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Design; path = Packages/Design; sourceTree = "<group>"; };
+		2D186D2B2C4BCF450027281F /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Utilities; path = Packages/Utilities; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D186CA02C49B7B20027281F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D186D2E2C4BCF8E0027281F /* Design in Frameworks */,
+				2D186D302C4BCF8E0027281F /* Utilities in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D186CB92C49B7B40027281F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D186CC32C49B7B40027281F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D186C9A2C49B7B20027281F = {
+			isa = PBXGroup;
+			children = (
+				2D186D2A2C4BCEF60027281F /* Design */,
+				2D186D2B2C4BCF450027281F /* Utilities */,
+				2D186CA52C49B7B20027281F /* App */,
+				2D186CEF2C4A9FD20027281F /* RootFiles */,
+				2D186CBF2C49B7B40027281F /* Tractive Demo AppTests */,
+				2D186CC92C49B7B40027281F /* Tractive Demo AppUITests */,
+				2D186CA42C49B7B20027281F /* Products */,
+				2D186D2C2C4BCF8E0027281F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D186CA42C49B7B20027281F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CA32C49B7B20027281F /* Tractive Demo App.app */,
+				2D186CBC2C49B7B40027281F /* Tests.xctest */,
+				2D186CC62C49B7B40027281F /* UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D186CA52C49B7B20027281F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CDE2C4A86B00027281F /* Sources */,
+				2D186CDF2C4A87050027281F /* Resources */,
+				2D186CE02C4A87260027281F /* SupportingFiles */,
+				2D186CF12C4AA0030027281F /* Generated */,
+				2D186CAA2C49B7B20027281F /* ViewController.swift */,
+				2D186CAF2C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2D186CBF2C49B7B40027281F /* Tractive Demo AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CC02C49B7B40027281F /* Tractive_Demo_AppTests.swift */,
+			);
+			path = "Tractive Demo AppTests";
+			sourceTree = "<group>";
+		};
+		2D186CC92C49B7B40027281F /* Tractive Demo AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CCA2C49B7B40027281F /* Tractive_Demo_AppUITests.swift */,
+				2D186CCC2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift */,
+			);
+			path = "Tractive Demo AppUITests";
+			sourceTree = "<group>";
+		};
+		2D186CD92C4A863B0027281F /* PetChooser */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CAC2C49B7B20027281F /* PetChooser.storyboard */,
+				2D186CDA2C4A86620027281F /* PetChooserViewModel.swift */,
+				2D186CDC2C4A867C0027281F /* PetChooserViewController.swift */,
+			);
+			path = PetChooser;
+			sourceTree = "<group>";
+		};
+		2D186CDE2C4A86B00027281F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CE22C4A874B0027281F /* Globals */,
+				2D186CE12C4A87430027281F /* ScreenFlows */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2D186CDF2C4A87050027281F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CE92C4A9E630027281F /* Localizables */,
+				2D186CE42C4A88F50027281F /* PetVideo.mp4 */,
+				2D186CB22C49B7B40027281F /* Images.xcassets */,
+				2D186CF52C4AA1270027281F /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D186CE02C4A87260027281F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CB72C49B7B40027281F /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2D186CE12C4A87430027281F /* ScreenFlows */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CB42C49B7B40027281F /* LaunchScreen.storyboard */,
+				2D186CE32C4A87560027281F /* AppDelegate */,
+				2D186CD92C4A863B0027281F /* PetChooser */,
+				2D186D022C4BCC470027281F /* CatChoiceViewController.swift */,
+				2D186D042C4BCC5C0027281F /* DogChoiceViewController.swift */,
+			);
+			path = ScreenFlows;
+			sourceTree = "<group>";
+		};
+		2D186CE22C4A874B0027281F /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CF72C4AA3330027281F /* Extensions */,
+				2D186CE62C4A8F5D0027281F /* ViewComponents */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		2D186CE32C4A87560027281F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CA62C49B7B20027281F /* AppDelegate.swift */,
+				2D186CA82C49B7B20027281F /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2D186CE62C4A8F5D0027281F /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CFE2C4ADC440027281F /* UILoopedVideoPlayer.swift */,
+				2D186D002C4ADC510027281F /* UILoopedVideoPlayer.xib */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		2D186CE92C4A9E630027281F /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CEE2C4A9E890027281F /* Localizable.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		2D186CEF2C4A9FD20027281F /* RootFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CF02C4A9FE50027281F /* swiftgen.yml */,
+			);
+			name = RootFiles;
+			path = App;
+			sourceTree = "<group>";
+		};
+		2D186CF12C4AA0030027281F /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2D186CF32C4AA0870027281F /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		2D186CF72C4AA3330027281F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D186D2C2C4BCF8E0027281F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D186CA22C49B7B20027281F /* Tractive Demo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D186CD02C49B7B40027281F /* Build configuration list for PBXNativeTarget "Tractive Demo App" */;
+			buildPhases = (
+				2D186CF22C4AA03A0027281F /* SwiftGen */,
+				2D186C9F2C49B7B20027281F /* Sources */,
+				2D186CA02C49B7B20027281F /* Frameworks */,
+				2D186CA12C49B7B20027281F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tractive Demo App";
+			packageProductDependencies = (
+				2D186D2D2C4BCF8E0027281F /* Design */,
+				2D186D2F2C4BCF8E0027281F /* Utilities */,
+			);
+			productName = "Tractive Demo App";
+			productReference = 2D186CA32C49B7B20027281F /* Tractive Demo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D186CBB2C49B7B40027281F /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D186CD32C49B7B40027281F /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				2D186CB82C49B7B40027281F /* Sources */,
+				2D186CB92C49B7B40027281F /* Frameworks */,
+				2D186CBA2C49B7B40027281F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D186CBE2C49B7B40027281F /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = "Tractive Demo AppTests";
+			productReference = 2D186CBC2C49B7B40027281F /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D186CC52C49B7B40027281F /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D186CD62C49B7B40027281F /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				2D186CC22C49B7B40027281F /* Sources */,
+				2D186CC32C49B7B40027281F /* Frameworks */,
+				2D186CC42C49B7B40027281F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D186CC82C49B7B40027281F /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = "Tractive Demo AppUITests";
+			productReference = 2D186CC62C49B7B40027281F /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D186C9B2C49B7B20027281F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2D186CA22C49B7B20027281F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					2D186CBB2C49B7B40027281F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 2D186CA22C49B7B20027281F;
+					};
+					2D186CC52C49B7B40027281F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 2D186CA22C49B7B20027281F;
+					};
+				};
+			};
+			buildConfigurationList = 2D186C9E2C49B7B20027281F /* Build configuration list for PBXProject "Tractive Demo App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D186C9A2C49B7B20027281F;
+			productRefGroup = 2D186CA42C49B7B20027281F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D186CA22C49B7B20027281F /* Tractive Demo App */,
+				2D186CBB2C49B7B40027281F /* Tests */,
+				2D186CC52C49B7B40027281F /* UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D186CA12C49B7B20027281F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D186CEC2C4A9E890027281F /* Localizable.strings in Resources */,
+				2D186D012C4ADC510027281F /* UILoopedVideoPlayer.xib in Resources */,
+				2D186CB62C49B7B40027281F /* LaunchScreen.storyboard in Resources */,
+				2D186CB32C49B7B40027281F /* Images.xcassets in Resources */,
+				2D186CF62C4AA1270027281F /* Colors.xcassets in Resources */,
+				2D186CAE2C49B7B20027281F /* PetChooser.storyboard in Resources */,
+				2D186CE52C4A88F50027281F /* PetVideo.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D186CBA2C49B7B40027281F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D186CC42C49B7B40027281F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D186CF22C4AA03A0027281F /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftgen > /dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen is not installed. Download it from https://github.com/SwiftGen/SwiftGen\"\nfi \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D186C9F2C49B7B20027281F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D186CB12C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld in Sources */,
+				2D186CAB2C49B7B20027281F /* ViewController.swift in Sources */,
+				2D186CF42C4AA0870027281F /* Strings.swift in Sources */,
+				2D186CA72C49B7B20027281F /* AppDelegate.swift in Sources */,
+				2D186CFF2C4ADC440027281F /* UILoopedVideoPlayer.swift in Sources */,
+				2D186CDB2C4A86620027281F /* PetChooserViewModel.swift in Sources */,
+				2D186D032C4BCC470027281F /* CatChoiceViewController.swift in Sources */,
+				2D186D052C4BCC5C0027281F /* DogChoiceViewController.swift in Sources */,
+				2D186CDD2C4A867C0027281F /* PetChooserViewController.swift in Sources */,
+				2D186CA92C49B7B20027281F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D186CB82C49B7B40027281F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D186CC12C49B7B40027281F /* Tractive_Demo_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D186CC22C49B7B40027281F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D186CCB2C49B7B40027281F /* Tractive_Demo_AppUITests.swift in Sources */,
+				2D186CCD2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D186CBE2C49B7B40027281F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D186CA22C49B7B20027281F /* Tractive Demo App */;
+			targetProxy = 2D186CBD2C49B7B40027281F /* PBXContainerItemProxy */;
+		};
+		2D186CC82C49B7B40027281F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D186CA22C49B7B20027281F /* Tractive Demo App */;
+			targetProxy = 2D186CC72C49B7B40027281F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D186CAC2C49B7B20027281F /* PetChooser.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D186CAD2C49B7B20027281F /* Base */,
+			);
+			name = PetChooser.storyboard;
+			sourceTree = "<group>";
+		};
+		2D186CB42C49B7B40027281F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D186CB52C49B7B40027281F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D186CEE2C4A9E890027281F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D186CED2C4A9E890027281F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D186CCE2C49B7B40027281F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D186CCF2C49B7B40027281F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D186CD12C49B7B40027281F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = PetChooser;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractive.Tractive-Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D186CD22C49B7B40027281F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = PetChooser;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractive.Tractive-Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D186CD42C49B7B40027281F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractive.Tractive-Demo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tractive Demo App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tractive Demo App";
+			};
+			name = Debug;
+		};
+		2D186CD52C49B7B40027281F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractive.Tractive-Demo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tractive Demo App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tractive Demo App";
+			};
+			name = Release;
+		};
+		2D186CD72C49B7B40027281F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractive.Tractive-Demo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tractive Demo App";
+			};
+			name = Debug;
+		};
+		2D186CD82C49B7B40027281F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractive.Tractive-Demo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tractive Demo App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D186C9E2C49B7B20027281F /* Build configuration list for PBXProject "Tractive Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D186CCE2C49B7B40027281F /* Debug */,
+				2D186CCF2C49B7B40027281F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D186CD02C49B7B40027281F /* Build configuration list for PBXNativeTarget "Tractive Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D186CD12C49B7B40027281F /* Debug */,
+				2D186CD22C49B7B40027281F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D186CD32C49B7B40027281F /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D186CD42C49B7B40027281F /* Debug */,
+				2D186CD52C49B7B40027281F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D186CD62C49B7B40027281F /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D186CD72C49B7B40027281F /* Debug */,
+				2D186CD82C49B7B40027281F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D186D2D2C4BCF8E0027281F /* Design */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Design;
+		};
+		2D186D2F2C4BCF8E0027281F /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilities;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2D186CAF2C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D186CB02C49B7B20027281F /* Tractive_Demo_App.xcdatamodel */,
+			);
+			currentVersion = 2D186CB02C49B7B20027281F /* Tractive_Demo_App.xcdatamodel */;
+			path = Tractive_Demo_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2D186C9B2C49B7B20027281F /* Project object */;
+}
