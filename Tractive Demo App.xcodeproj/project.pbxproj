@@ -76,6 +76,7 @@
 		2D186D042C4BCC5C0027281F /* DogChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogChoiceViewController.swift; sourceTree = "<group>"; };
 		2D186D2A2C4BCEF60027281F /* Design */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Design; path = Packages/Design; sourceTree = "<group>"; };
 		2D186D2B2C4BCF450027281F /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Utilities; path = Packages/Utilities; sourceTree = "<group>"; };
+		2D186D312C4BD1570027281F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +248,7 @@
 		2D186CEF2C4A9FD20027281F /* RootFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2D186D312C4BD1570027281F /* .gitignore */,
 				2D186CF02C4A9FE50027281F /* swiftgen.yml */,
 			);
 			name = RootFiles;
