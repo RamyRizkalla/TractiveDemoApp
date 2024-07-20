@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
+/// A UIButton subclass that provides easier access to some properties.
 @IBDesignable public final class DefaultButton: UIButton {
-  @IBInspectable var cornerRadius: CGFloat {
+  @IBInspectable public var cornerRadius: CGFloat {
     set {
       layer.cornerRadius = newValue
     }
@@ -18,20 +19,13 @@ import UIKit
     }
   }
 
-  @IBInspectable var normalTitleColor: UIColor {
+  /// The title color for the normal state.
+  @IBInspectable public var normalTitleColor: UIColor {
     set {
       setTitleColor(newValue, for: .normal)
     }
     get {
-      return currentTitleColor
+      return titleLabel?.textColor ?? .white
     }
-  }
-
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-  }
-
-  required init?(coder: NSCoder) {
-    super.init(coder: coder)
   }
 }

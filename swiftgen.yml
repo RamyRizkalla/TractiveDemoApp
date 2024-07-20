@@ -30,7 +30,7 @@
      - templateName: swift5
        params:
          forceProvidesNamespaces: true
-       output: Assets.swift
+       output: App/Generated/Assets.swift
 
 
 ## Generate constants for your storyboards and XIBs.
@@ -38,14 +38,12 @@
 ##    (You can remove the segues entry if you don't use segues in your IB files).
 ##   For `inputs` we can use "." here (aka "current directory", at least relative to `input_dir` = "MyLib/Sources"),
 ##    and SwiftGen will recursively find all `*.storyboard` and `*.xib` files in there.
-# ib:
-#   inputs:
-#     - .
-#   outputs:
-#     - templateName: scenes-swift5
-#       output: IB-Scenes+Generated.swift
-#     - templateName: segues-swift5
-#       output: IB-Segues+Generated.swift
+ ib:
+   inputs:
+     - .
+   outputs:
+     - templateName: scenes-swift5
+       output: App/Generated/Storyboards.swift
 
 
 ## There are other parsers available for you to use depending on your needs, for example:

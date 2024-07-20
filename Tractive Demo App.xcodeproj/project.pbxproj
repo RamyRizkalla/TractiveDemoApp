@@ -23,12 +23,12 @@
 		2D186CEC2C4A9E890027281F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CEE2C4A9E890027281F /* Localizable.strings */; };
 		2D186CF42C4AA0870027281F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CF32C4AA0870027281F /* Strings.swift */; };
 		2D186CF62C4AA1270027281F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CF52C4AA1270027281F /* Colors.xcassets */; };
-		2D186CFF2C4ADC440027281F /* UILoopedVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CFE2C4ADC440027281F /* UILoopedVideoPlayer.swift */; };
-		2D186D012C4ADC510027281F /* UILoopedVideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D186D002C4ADC510027281F /* UILoopedVideoPlayer.xib */; };
 		2D186D032C4BCC470027281F /* CatChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D022C4BCC470027281F /* CatChoiceViewController.swift */; };
-		2D186D052C4BCC5C0027281F /* DogChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D042C4BCC5C0027281F /* DogChoiceViewController.swift */; };
 		2D186D2E2C4BCF8E0027281F /* Design in Frameworks */ = {isa = PBXBuildFile; productRef = 2D186D2D2C4BCF8E0027281F /* Design */; };
 		2D186D302C4BCF8E0027281F /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 2D186D2F2C4BCF8E0027281F /* Utilities */; };
+		2D186D342C4BF3530027281F /* CatChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D186D332C4BF3530027281F /* CatChoice.storyboard */; };
+		2D186D362C4BF6290027281F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D352C4BF6290027281F /* Assets.swift */; };
+		2D186D382C4C03F70027281F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D372C4C03F70027281F /* Storyboards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,13 +70,13 @@
 		2D186CF02C4A9FE50027281F /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		2D186CF32C4AA0870027281F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		2D186CF52C4AA1270027281F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		2D186CFE2C4ADC440027281F /* UILoopedVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILoopedVideoPlayer.swift; sourceTree = "<group>"; };
-		2D186D002C4ADC510027281F /* UILoopedVideoPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UILoopedVideoPlayer.xib; sourceTree = "<group>"; };
 		2D186D022C4BCC470027281F /* CatChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatChoiceViewController.swift; sourceTree = "<group>"; };
-		2D186D042C4BCC5C0027281F /* DogChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogChoiceViewController.swift; sourceTree = "<group>"; };
 		2D186D2A2C4BCEF60027281F /* Design */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Design; path = Packages/Design; sourceTree = "<group>"; };
 		2D186D2B2C4BCF450027281F /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Utilities; path = Packages/Utilities; sourceTree = "<group>"; };
 		2D186D312C4BD1570027281F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		2D186D332C4BF3530027281F /* CatChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatChoice.storyboard; sourceTree = "<group>"; };
+		2D186D352C4BF6290027281F /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		2D186D372C4C03F70027281F /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,11 +201,10 @@
 		2D186CE12C4A87430027281F /* ScreenFlows */ = {
 			isa = PBXGroup;
 			children = (
+				2D186D322C4BF30A0027281F /* CatChoice */,
 				2D186CB42C49B7B40027281F /* LaunchScreen.storyboard */,
 				2D186CE32C4A87560027281F /* AppDelegate */,
 				2D186CD92C4A863B0027281F /* PetChooser */,
-				2D186D022C4BCC470027281F /* CatChoiceViewController.swift */,
-				2D186D042C4BCC5C0027281F /* DogChoiceViewController.swift */,
 			);
 			path = ScreenFlows;
 			sourceTree = "<group>";
@@ -231,8 +230,6 @@
 		2D186CE62C4A8F5D0027281F /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
-				2D186CFE2C4ADC440027281F /* UILoopedVideoPlayer.swift */,
-				2D186D002C4ADC510027281F /* UILoopedVideoPlayer.xib */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -258,7 +255,9 @@
 		2D186CF12C4AA0030027281F /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				2D186D372C4C03F70027281F /* Storyboards.swift */,
 				2D186CF32C4AA0870027281F /* Strings.swift */,
+				2D186D352C4BF6290027281F /* Assets.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -275,6 +274,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D186D322C4BF30A0027281F /* CatChoice */ = {
+			isa = PBXGroup;
+			children = (
+				2D186D022C4BCC470027281F /* CatChoiceViewController.swift */,
+				2D186D332C4BF3530027281F /* CatChoice.storyboard */,
+			);
+			path = CatChoice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,10 +395,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D186CEC2C4A9E890027281F /* Localizable.strings in Resources */,
-				2D186D012C4ADC510027281F /* UILoopedVideoPlayer.xib in Resources */,
 				2D186CB62C49B7B40027281F /* LaunchScreen.storyboard in Resources */,
 				2D186CB32C49B7B40027281F /* Images.xcassets in Resources */,
 				2D186CF62C4AA1270027281F /* Colors.xcassets in Resources */,
+				2D186D342C4BF3530027281F /* CatChoice.storyboard in Resources */,
 				2D186CAE2C49B7B20027281F /* PetChooser.storyboard in Resources */,
 				2D186CE52C4A88F50027281F /* PetVideo.mp4 in Resources */,
 			);
@@ -442,11 +450,11 @@
 				2D186CAB2C49B7B20027281F /* ViewController.swift in Sources */,
 				2D186CF42C4AA0870027281F /* Strings.swift in Sources */,
 				2D186CA72C49B7B20027281F /* AppDelegate.swift in Sources */,
-				2D186CFF2C4ADC440027281F /* UILoopedVideoPlayer.swift in Sources */,
+				2D186D382C4C03F70027281F /* Storyboards.swift in Sources */,
 				2D186CDB2C4A86620027281F /* PetChooserViewModel.swift in Sources */,
 				2D186D032C4BCC470027281F /* CatChoiceViewController.swift in Sources */,
-				2D186D052C4BCC5C0027281F /* DogChoiceViewController.swift in Sources */,
 				2D186CDD2C4A867C0027281F /* PetChooserViewController.swift in Sources */,
+				2D186D362C4BF6290027281F /* Assets.swift in Sources */,
 				2D186CA92C49B7B20027281F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,8 +645,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = PetChooser;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -665,8 +672,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = PetChooser;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

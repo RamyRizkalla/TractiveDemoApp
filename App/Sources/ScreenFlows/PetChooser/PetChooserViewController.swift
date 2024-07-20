@@ -11,50 +11,65 @@ import UIKit
 import Utilities
 
 class PetChooserViewController: UIViewController {
-  @IBOutlet private var videoViewContainer: UILoopedVideoPlayer!
-  @IBOutlet private var titleLabel: UILabel!
-  @IBOutlet private var subtitleLabel: UILabel!
+  @IBOutlet private var videoViewContainer: UIQuestionnaireView!
 
-  var player: AVQueuePlayer?
-  var videoLooper: AVPlayerLooper?
-
-  @IBAction private func didPressCatParent(_ sender: DefaultButton) {
-  }
-
-  @IBAction private func didPressDogParent(_ sender: DefaultButton) {
-  }
+  private let viewModel: PetChooserViewModel = .init()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
-  }
-
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    self.initializeVideoPlayerWithVideo()
+    initializeVideoPlayerWithVideo()
   }
 
   private func setupView() {
     setupTitleLabel()
     setupsubtitleLabel()
+    setupTopButton()
+    setupBottomButton()
   }
 
   private func setupTitleLabel() {
-    titleLabel.text = L10n.PetChooser.title
-    titleLabel.font = .boldSystemFont(ofSize: 24)
-    titleLabel.textColor = .tintColor
+    videoViewContainer.setupTitleLabel { titleLabel in
+      titleLabel.text = viewModel.title
+      titleLabel.font = .boldSystemFont(sizeType: .title)
+      titleLabel.textColor = .tintColor
+    }
   }
 
   private func setupsubtitleLabel() {
-    subtitleLabel.attributedText = NSMutableAttributedString()
-      .normal(L10n.PetChooser.Subtitle.expectation + " ")
-      .bold(L10n.PetChooser.Subtitle.question)
-    titleLabel.textColor = .tintColor
+    videoViewContainer.setupsubtitleLabel { subtitleLabel in
+      subtitleLabel.attributedText = NSMutableAttributedString()
+        .normal(L10n.PetChooser.Subtitle.expectation + " ")
+        .bold(L10n.PetChooser.Subtitle.question)
+    }
   }
 
-  func initializeVideoPlayerWithVideo() {
-    if let videoString = Bundle.main.path(forResource: "PetVideo", ofType: "mp4") {
-      videoViewContainer.initialize(videoString)
+  private func setupTopButton() {
+    videoViewContainer.setupTopButton { topButton in
+      topButton.setTitle(L10n.PetChooser.catParent, for: .normal)
+
+      let action = UIAction { _ in
+        let viewCtrl = StoryboardScene.CatChoice.catChoiceViewController.instantiate()
+        self.navigationController?.pushViewController(viewCtrl, animated: true)
+      }
+      topButton.addAction(action, for: .touchUpInside)
+    }
+  }
+
+  private func setupBottomButton() {
+    videoViewContainer.setupBottomButton { bottomButton in
+      bottomButton.setTitle(L10n.PetChooser.dogParent, for: .normal)
+      // TODO: Add navigation logic to the bottom button.
+      let action = UIAction { _ in
+        self.showAlert(message: "To be implemented")
+      }
+      bottomButton.addAction(action, for: .touchUpInside)
+    }
+  }
+
+  private func initializeVideoPlayerWithVideo() {
+    if let videoString = viewModel.videoPath {
+      videoViewContainer.setMedia(.video(videoString))
     }
   }
 }

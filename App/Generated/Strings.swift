@@ -10,7 +10,25 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum CatChoice {
+    /// Live somewhere you feel comfortable letting your cat out?
+    internal static let subtitle = L10n.tr("Localizable", "cat_choice.subtitle", fallback: "Live somewhere you feel comfortable letting your cat out?")
+    /// Free to roam
+    internal static let title = L10n.tr("Localizable", "cat_choice.title", fallback: "Free to roam")
+  }
+  internal enum Global {
+    internal enum Titles {
+      /// No
+      internal static let no = L10n.tr("Localizable", "global.titles.no", fallback: "No")
+      /// Yes
+      internal static let yes = L10n.tr("Localizable", "global.titles.yes", fallback: "Yes")
+    }
+  }
   internal enum PetChooser {
+    /// Cat Parent
+    internal static let catParent = L10n.tr("Localizable", "pet_chooser.cat_parent", fallback: "Cat Parent")
+    /// Dog Parent
+    internal static let dogParent = L10n.tr("Localizable", "pet_chooser.dog_parent", fallback: "Dog Parent")
     /// Localizable.strings
     ///   Tractive Demo App
     /// 

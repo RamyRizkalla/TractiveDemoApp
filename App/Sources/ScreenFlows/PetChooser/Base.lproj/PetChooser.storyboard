@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IgD-0N-TDc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,107 +17,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gS8-dk-Ang" customClass="UILoopedVideoPlayer" customModule="Tractive_Demo_App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uV-0L-Cjl" customClass="UIQuestionnaireView" customModule="Design">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYD-BJ-ycU">
-                                <rect key="frame" x="25" y="451" width="343" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke5-wr-2Hp">
-                                <rect key="frame" x="25" y="486.33333333333331" width="343" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOH-Jy-72t" customClass="DefaultButton" customModule="Tractive_Demo_App" customModuleProvider="target">
-                                <rect key="frame" x="25" y="673" width="343" height="50"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="zJR-MG-Qx4"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="normalTitleColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="didPressCatParent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzY-B5-iGe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pt8-Dn-cqK" customClass="DefaultButton" customModule="Tractive_Demo_App" customModuleProvider="target">
-                                <rect key="frame" x="25" y="743" width="343" height="50"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="u0r-ww-NwB"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="normalTitleColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="didPressDogParent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ehv-pb-bo2"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ke5-wr-2Hp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="7yl-s6-IiR"/>
-                            <constraint firstItem="QYD-BJ-ycU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="8mo-jP-mpm"/>
-                            <constraint firstItem="KOH-Jy-72t" firstAttribute="centerX" secondItem="Pt8-Dn-cqK" secondAttribute="centerX" id="AOb-zJ-h7B"/>
-                            <constraint firstItem="Pt8-Dn-cqK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="CGZ-PR-5e7"/>
-                            <constraint firstItem="Pt8-Dn-cqK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="K40-lD-zZA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pt8-Dn-cqK" secondAttribute="bottom" constant="25" id="KwG-v2-L77"/>
-                            <constraint firstItem="gS8-dk-Ang" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SFo-eX-UYb"/>
-                            <constraint firstItem="Pt8-Dn-cqK" firstAttribute="top" secondItem="KOH-Jy-72t" secondAttribute="bottom" constant="20" id="cQQ-1Q-Lnr"/>
-                            <constraint firstItem="KOH-Jy-72t" firstAttribute="leading" secondItem="Pt8-Dn-cqK" secondAttribute="leading" id="cgh-fe-Hlb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gS8-dk-Ang" secondAttribute="trailing" id="dYf-6G-W9c"/>
-                            <constraint firstItem="gS8-dk-Ang" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="l3p-8d-ytZ"/>
-                            <constraint firstItem="QYD-BJ-ycU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lZF-UC-Mmu"/>
-                            <constraint firstItem="ke5-wr-2Hp" firstAttribute="top" secondItem="QYD-BJ-ycU" secondAttribute="bottom" constant="15" id="mnE-M7-aUs"/>
-                            <constraint firstItem="gS8-dk-Ang" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="muJ-Aq-hJA"/>
-                            <constraint firstItem="ke5-wr-2Hp" firstAttribute="centerX" secondItem="QYD-BJ-ycU" secondAttribute="centerX" id="qpY-vE-GmJ"/>
-                            <constraint firstItem="QYD-BJ-ycU" firstAttribute="top" secondItem="gS8-dk-Ang" secondAttribute="bottom" constant="25" id="r9s-h8-vk0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7uV-0L-Cjl" secondAttribute="trailing" id="48E-BO-DHo"/>
+                            <constraint firstItem="7uV-0L-Cjl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4PU-ee-piv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7uV-0L-Cjl" secondAttribute="bottom" id="Fnj-cv-vDl"/>
+                            <constraint firstItem="7uV-0L-Cjl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ts3-cR-Mdu"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fin-KH-Z3G"/>
                     <connections>
-                        <outlet property="subtitleLabel" destination="ke5-wr-2Hp" id="akK-9v-YjU"/>
-                        <outlet property="titleLabel" destination="QYD-BJ-ycU" id="Yv6-Lw-BNr"/>
-                        <outlet property="videoViewContainer" destination="gS8-dk-Ang" id="Mg0-gQ-Mep"/>
+                        <outlet property="videoViewContainer" destination="7uV-0L-Cjl" id="fUK-A0-cbs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="25"/>
+            <point key="canvasLocation" x="886.25954198473278" y="24.647887323943664"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hPr-gy-FsQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IgD-0N-TDc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4gx-Nv-geD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NCk-aO-Jk7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eE-A9-KGw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40.458015267175568" y="24.647887323943664"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="KOH-Jy-72t">
-            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
-        </designable>
-        <designable name="Pt8-Dn-cqK">
-            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
-        </designable>
-    </designables>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.22352941176470589" green="0.49803921568627452" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

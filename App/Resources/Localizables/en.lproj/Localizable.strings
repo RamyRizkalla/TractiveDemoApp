@@ -11,3 +11,15 @@
 "pet_chooser.subtitle.expectation" = "We'd love to show you what to expect once you get one.";
 
 "pet_chooser.subtitle.question" = "But first, tell us - are you a cat or dog parent?";
+
+"pet_chooser.cat_parent" = "Cat Parent";
+
+"pet_chooser.dog_parent" = "Dog Parent";
+
+"cat_choice.title" = "Free to roam";
+
+"cat_choice.subtitle" = "Live somewhere you feel comfortable letting your cat out?";
+
+"global.titles.no" = "No";
+
+"global.titles.yes" = "Yes";

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+final class PetChooserViewModel {
+  let title: String = L10n.PetChooser.title
+
+  var videoPath: String? {
+    Bundle.main.path(forResource: "PetVideo", ofType: "mp4")
+  }
+}
