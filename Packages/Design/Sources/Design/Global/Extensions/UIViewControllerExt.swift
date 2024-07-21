@@ -13,7 +13,9 @@ public extension UIViewController {
     title: String? = nil,
     message: String
   ) {
-    let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert).with {
+      $0.addAction(.init(title: "Ok", style: .default))
+    }
     present(alert, animated: true)
   }
 }

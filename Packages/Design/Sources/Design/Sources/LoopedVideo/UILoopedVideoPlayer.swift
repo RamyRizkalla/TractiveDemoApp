@@ -30,24 +30,20 @@ final public class UILoopedVideoPlayer: UIView, NibLoadable {
 
   /// Initializes and plays the video.
   public func initialize(_ videoPath: String) {
-    // convert the path string to a url
     let videoUrl = URL(fileURLWithPath: videoPath)
-
     let asset = AVAsset(url: videoUrl)
     let item = AVPlayerItem(asset: asset)
 
     self.player = AVQueuePlayer()
 
-    // create a video layer for the player
     let layer = AVPlayerLayer(player: player).with {
       $0.frame = containerView.bounds
       $0.videoGravity = .resizeAspectFill
     }
 
-    // add the layer to the container view
-    containerView.layer.addSublayer(layer)
+    self.containerView.layer.addSublayer(layer)
 
-    videoLooper = AVPlayerLooper(player: self.player!, templateItem: item)
+    self.videoLooper = AVPlayerLooper(player: self.player!, templateItem: item)
     self.player?.play()
   }
 }

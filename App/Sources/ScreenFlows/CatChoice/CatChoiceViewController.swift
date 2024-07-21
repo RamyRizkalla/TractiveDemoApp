@@ -11,7 +11,7 @@ import UIKit
 class CatChoiceViewController: UIViewController {
   @IBOutlet private var videoViewContainer: UIQuestionnaireView!
 
-  private let l10n = L10n.CatChoice.self
+  private let viewModel: CatChoiceViewModel = .init()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -29,7 +29,7 @@ class CatChoiceViewController: UIViewController {
 
   private func setupTitleLabel() {
     videoViewContainer.setupTitleLabel { titleLabel in
-      titleLabel.text = l10n.title
+      titleLabel.text = viewModel.title
       titleLabel.font = .boldSystemFont(ofSize: 24)
       titleLabel.textColor = .tintColor
     }
@@ -37,7 +37,7 @@ class CatChoiceViewController: UIViewController {
 
   private func setupsubtitleLabel() {
     videoViewContainer.setupsubtitleLabel { subtitleLabel in
-      subtitleLabel.text = l10n.subtitle
+      subtitleLabel.text = viewModel.subtitle
     }
   }
 

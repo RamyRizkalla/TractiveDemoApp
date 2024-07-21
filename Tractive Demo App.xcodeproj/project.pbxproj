@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D186CA72C49B7B20027281F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CA62C49B7B20027281F /* AppDelegate.swift */; };
 		2D186CA92C49B7B20027281F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CA82C49B7B20027281F /* SceneDelegate.swift */; };
-		2D186CAB2C49B7B20027281F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CAA2C49B7B20027281F /* ViewController.swift */; };
 		2D186CAE2C49B7B20027281F /* PetChooser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CAC2C49B7B20027281F /* PetChooser.storyboard */; };
 		2D186CB12C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CAF2C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld */; };
 		2D186CB32C49B7B40027281F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CB22C49B7B40027281F /* Images.xcassets */; };
@@ -28,6 +27,7 @@
 		2D186D342C4BF3530027281F /* CatChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D186D332C4BF3530027281F /* CatChoice.storyboard */; };
 		2D186D362C4BF6290027281F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D352C4BF6290027281F /* Assets.swift */; };
 		2D186D382C4C03F70027281F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D372C4C03F70027281F /* Storyboards.swift */; };
+		2D186D3C2C4D84CC0027281F /* CatChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186D3B2C4D84CC0027281F /* CatChoiceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		2D186CA32C49B7B20027281F /* Tractive Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tractive Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D186CA62C49B7B20027281F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D186CA82C49B7B20027281F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D186CAA2C49B7B20027281F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D186CAD2C49B7B20027281F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PetChooser.storyboard; sourceTree = "<group>"; };
 		2D186CB02C49B7B20027281F /* Tractive_Demo_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tractive_Demo_App.xcdatamodel; sourceTree = "<group>"; };
 		2D186CB22C49B7B40027281F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -75,7 +74,8 @@
 		2D186D332C4BF3530027281F /* CatChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatChoice.storyboard; sourceTree = "<group>"; };
 		2D186D352C4BF6290027281F /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		2D186D372C4C03F70027281F /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
-		2D186D392C4C7B9D0027281F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2D186D3B2C4D84CC0027281F /* CatChoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatChoiceViewModel.swift; sourceTree = "<group>"; };
+		2D186D3D2C4D867D0027281F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +136,6 @@
 				2D186CDF2C4A87050027281F /* Resources */,
 				2D186CE02C4A87260027281F /* SupportingFiles */,
 				2D186CF12C4AA0030027281F /* Generated */,
-				2D186CAA2C49B7B20027281F /* ViewController.swift */,
-				2D186CAF2C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -180,6 +178,7 @@
 		2D186CDF2C4A87050027281F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D186CAF2C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld */,
 				2D186CE92C4A9E630027281F /* Localizables */,
 				2D186CE42C4A88F50027281F /* PetVideo.mp4 */,
 				2D186CB22C49B7B40027281F /* Images.xcassets */,
@@ -199,9 +198,9 @@
 		2D186CE12C4A87430027281F /* ScreenFlows */ = {
 			isa = PBXGroup;
 			children = (
+				2D186CE32C4A87560027281F /* AppDelegate */,
 				2D186D322C4BF30A0027281F /* CatChoice */,
 				2D186CB42C49B7B40027281F /* LaunchScreen.storyboard */,
-				2D186CE32C4A87560027281F /* AppDelegate */,
 				2D186CD92C4A863B0027281F /* PetChooser */,
 			);
 			path = ScreenFlows;
@@ -243,9 +242,9 @@
 		2D186CEF2C4A9FD20027281F /* RootFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2D186D3D2C4D867D0027281F /* README.md */,
 				2D186D312C4BD1570027281F /* .gitignore */,
 				2D186CF02C4A9FE50027281F /* swiftgen.yml */,
-				2D186D392C4C7B9D0027281F /* README.md */,
 			);
 			name = RootFiles;
 			path = App;
@@ -279,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				2D186D022C4BCC470027281F /* CatChoiceViewController.swift */,
+				2D186D3B2C4D84CC0027281F /* CatChoiceViewModel.swift */,
 				2D186D332C4BF3530027281F /* CatChoice.storyboard */,
 			);
 			path = CatChoice;
@@ -446,12 +446,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D186CB12C49B7B20027281F /* Tractive_Demo_App.xcdatamodeld in Sources */,
-				2D186CAB2C49B7B20027281F /* ViewController.swift in Sources */,
 				2D186CF42C4AA0870027281F /* Strings.swift in Sources */,
 				2D186CA72C49B7B20027281F /* AppDelegate.swift in Sources */,
 				2D186D382C4C03F70027281F /* Storyboards.swift in Sources */,
 				2D186CDB2C4A86620027281F /* PetChooserViewModel.swift in Sources */,
 				2D186D032C4BCC470027281F /* CatChoiceViewController.swift in Sources */,
+				2D186D3C2C4D84CC0027281F /* CatChoiceViewModel.swift in Sources */,
 				2D186CDD2C4A867C0027281F /* PetChooserViewController.swift in Sources */,
 				2D186D362C4BF6290027281F /* Assets.swift in Sources */,
 				2D186CA92C49B7B20027281F /* SceneDelegate.swift in Sources */,
