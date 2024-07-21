@@ -33,6 +33,7 @@ class PetChooserViewController: UIViewController {
       titleLabel.text = viewModel.title
       titleLabel.font = .boldSystemFont(sizeType: .title)
       titleLabel.textColor = .tintColor
+      titleLabel.accessibilityIdentifier = "petChooser.titleLabel"
     }
   }
 
@@ -41,6 +42,7 @@ class PetChooserViewController: UIViewController {
       subtitleLabel.attributedText = NSMutableAttributedString()
         .normal(L10n.PetChooser.Subtitle.expectation + " ")
         .bold(L10n.PetChooser.Subtitle.question)
+      subtitleLabel.accessibilityIdentifier = "petChooser.subTitleLabel"
     }
   }
 

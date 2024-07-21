@@ -15,8 +15,7 @@
 		2D186CB32C49B7B40027281F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CB22C49B7B40027281F /* Images.xcassets */; };
 		2D186CB62C49B7B40027281F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CB42C49B7B40027281F /* LaunchScreen.storyboard */; };
 		2D186CC12C49B7B40027281F /* Tractive_Demo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CC02C49B7B40027281F /* Tractive_Demo_AppTests.swift */; };
-		2D186CCB2C49B7B40027281F /* Tractive_Demo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CCA2C49B7B40027281F /* Tractive_Demo_AppUITests.swift */; };
-		2D186CCD2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CCC2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift */; };
+		2D186CCB2C49B7B40027281F /* PetChooserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CCA2C49B7B40027281F /* PetChooserUITests.swift */; };
 		2D186CDB2C4A86620027281F /* PetChooserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CDA2C4A86620027281F /* PetChooserViewModel.swift */; };
 		2D186CDD2C4A867C0027281F /* PetChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D186CDC2C4A867C0027281F /* PetChooserViewController.swift */; };
 		2D186CE52C4A88F50027281F /* PetVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D186CE42C4A88F50027281F /* PetVideo.mp4 */; };
@@ -61,8 +60,7 @@
 		2D186CBC2C49B7B40027281F /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D186CC02C49B7B40027281F /* Tractive_Demo_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tractive_Demo_AppTests.swift; sourceTree = "<group>"; };
 		2D186CC62C49B7B40027281F /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D186CCA2C49B7B40027281F /* Tractive_Demo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tractive_Demo_AppUITests.swift; sourceTree = "<group>"; };
-		2D186CCC2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tractive_Demo_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D186CCA2C49B7B40027281F /* PetChooserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetChooserUITests.swift; sourceTree = "<group>"; };
 		2D186CDA2C4A86620027281F /* PetChooserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetChooserViewModel.swift; sourceTree = "<group>"; };
 		2D186CDC2C4A867C0027281F /* PetChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetChooserViewController.swift; sourceTree = "<group>"; };
 		2D186CE42C4A88F50027281F /* PetVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PetVideo.mp4; sourceTree = "<group>"; };
@@ -77,6 +75,7 @@
 		2D186D332C4BF3530027281F /* CatChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatChoice.storyboard; sourceTree = "<group>"; };
 		2D186D352C4BF6290027281F /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		2D186D372C4C03F70027281F /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		2D186D392C4C7B9D0027281F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +112,8 @@
 				2D186D2B2C4BCF450027281F /* Utilities */,
 				2D186CA52C49B7B20027281F /* App */,
 				2D186CEF2C4A9FD20027281F /* RootFiles */,
-				2D186CBF2C49B7B40027281F /* Tractive Demo AppTests */,
-				2D186CC92C49B7B40027281F /* Tractive Demo AppUITests */,
+				2D186CBF2C49B7B40027281F /* Tests */,
+				2D186CC92C49B7B40027281F /* UITests */,
 				2D186CA42C49B7B20027281F /* Products */,
 				2D186D2C2C4BCF8E0027281F /* Frameworks */,
 			);
@@ -143,21 +142,20 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		2D186CBF2C49B7B40027281F /* Tractive Demo AppTests */ = {
+		2D186CBF2C49B7B40027281F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				2D186CC02C49B7B40027281F /* Tractive_Demo_AppTests.swift */,
 			);
-			path = "Tractive Demo AppTests";
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		2D186CC92C49B7B40027281F /* Tractive Demo AppUITests */ = {
+		2D186CC92C49B7B40027281F /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				2D186CCA2C49B7B40027281F /* Tractive_Demo_AppUITests.swift */,
-				2D186CCC2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift */,
+				2D186CCA2C49B7B40027281F /* PetChooserUITests.swift */,
 			);
-			path = "Tractive Demo AppUITests";
+			path = UITests;
 			sourceTree = "<group>";
 		};
 		2D186CD92C4A863B0027281F /* PetChooser */ = {
@@ -247,6 +245,7 @@
 			children = (
 				2D186D312C4BD1570027281F /* .gitignore */,
 				2D186CF02C4A9FE50027281F /* swiftgen.yml */,
+				2D186D392C4C7B9D0027281F /* README.md */,
 			);
 			name = RootFiles;
 			path = App;
@@ -471,8 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D186CCB2C49B7B40027281F /* Tractive_Demo_AppUITests.swift in Sources */,
-				2D186CCD2C49B7B40027281F /* Tractive_Demo_AppUITestsLaunchTests.swift in Sources */,
+				2D186CCB2C49B7B40027281F /* PetChooserUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
